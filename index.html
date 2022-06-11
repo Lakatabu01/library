@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Digital library</h1>
+            <div><p class="total">Total number of books: 1</p></div>
+          <button onclick="openForm()" class="add-button"><h3>Add book to library</h3></button>
+        </div>
+        <div class="parent">
+            
+            <div class="addition">
+                <div class="insert">
+                    
+                    <div class="form">
+                        <label for="title">
+                            <span>Title</span>
+                        </label>
+                            <input placeholder="A fat cat" class="sample" type="text">
+                    </div>
+                    <div class="form">
+                        <label for="Author">
+                            <span>Author</span>
+                        </label>
+                            <input placeholder="Mr Mouse" class="sample1" type="text">                      
+                    </div>
+                    <div class="form">
+                        <label for="pages">
+                            <span>Pages</span>
+                        </label>
+                            <input placeholder="198" class="sample2" type="number">                     
+                    </div>
+                   
+                    
+
+                    <button onclick="closeForm()">Cancel</button>
+                    <button onclick="addBookToLibrary()">Submit</button>
+                </div>
+            </div>
+
+            <div class="body">
+            
+            </div>
+             </div>
+             
+             <div class="footer">
+                 <p> Copyright © 2022 Olanrewaju</p>
+             </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
