@@ -44,6 +44,7 @@ myLibraryLoop()
 
  numOfBooks = myLibrary.length 
  para.textContent = "Total number of books: " + myLibrary.length
+ popUp.style.display = "none"
 }
 
 
