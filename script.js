@@ -1,3 +1,4 @@
+(function module() {
 let newBook
 let numOfBooks 
 
@@ -10,14 +11,23 @@ const card = document.querySelector(".card")
 const popUp =  document.querySelector(".addition")
 let para = document.querySelector(".total")
 
+const addButton = document.querySelector(".add-button")
+addButton.addEventListener("click", openForm)
+const cancel = document.querySelector(".cancel")
+cancel.addEventListener("click", closeForm)
+const submit = document.querySelector(".submit")
+submit.addEventListener("click", addBookToLibrary)
 
-function Book(title, author, pages){
+class Book{
+ constructor(title, author, pages){
   this.title = title
   this.author = author
   this.pages = pages
-  this.info = function(){
-    return  this.title + " by " + this.author + ", " + this.pages + ", " + this.status 
-  }
+}
+ get info(){
+  return  this.title + " by " + this.author + ", " + this.pages + ", " + this.status 
+}
+
 }
 
 //Code for manually added book
@@ -45,6 +55,7 @@ myLibraryLoop()
  numOfBooks = myLibrary.length 
  para.textContent = "Total number of books: " + myLibrary.length
  popUp.style.display = "none"
+ alert("Book added successfully")
 }
 
 
@@ -114,6 +125,9 @@ remove.classList.add("btn")
 }
 
  function openForm(){
+  sample.value = ""
+  sample1.value = ""
+  sample2.value = ""
   popUp.style.display = "block"
  }
 
@@ -179,3 +193,4 @@ imageDiv.classList.add("delete")
 remove.classList.add("btn")
   } 
 }
+})()
