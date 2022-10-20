@@ -19,6 +19,7 @@
         </div>
         <div class="parent">
             
+            <form >
             <div class="addition">
                 <div class="insert">
                     
@@ -26,28 +27,26 @@
                         <label for="title">
                             <span>Title</span>
                         </label>
-                            <input placeholder="A fat cat" class="sample" type="text">
-                    </div>
+                            <input placeholder="A fat cat" class="sample" type="text" minlength="2" maxlength="20" name="title">                            
+                        </div>
                     <div class="form">
                         <label for="Author">
                             <span>Author</span>
                         </label>
-                            <input placeholder="Mr Mouse" class="sample1" type="text">                      
+                            <input maxlength="20" minlength="2" placeholder="Mr Mouse" class="sample1" name="author" type="text">                      
                     </div>
                     <div class="form">
                         <label for="pages">
                             <span>Pages</span>
                         </label>
-                            <input placeholder="198" class="sample2" type="number">                     
+                            <input min="2" max="200" placeholder="198" class="sample2" type="number">                     
                     </div>
                    
-                    
-
-                    <button class="cancel">Cancel</button>
-                    <button class="submit">Submit</button>
+                    <button type="reset" class="cancel">Cancel</button>
+                    <button type="button" class="submit">Submit</button>
                 </div>
             </div>
-
+             </form>
             <div class="body">
             
             </div>
